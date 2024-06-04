@@ -4,6 +4,7 @@ import cookieParser from 'cookie-parser'
 import authRoutes from "./routes/auth.routes.js";
 import connectToMongoDB from "./db/connectToMongoDB.js";
 import messageRoutes from './routes/message.routes.js'
+import userRoutes from './routes/user.route.js'
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -13,6 +14,7 @@ app.use(express.json())  //to parse incoming req from json payloads(from req.bod
 app.use(cookieParser())   //to read a cookie using req 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
+app.use("/api/users", userRoutes);
 
 app.get("/", (req, res) => {
   res.send("sajfaliteja there");
