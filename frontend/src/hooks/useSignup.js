@@ -3,6 +3,7 @@ import toast from 'react-hot-toast';
 import { useAuthContext } from '../context/AuthContext';
 
 const useSignup = () => {
+
   const{authUser,setAuthUser}=useAuthContext();
   const[loading,setLoading]=useState(false);
   const signup=async({fullName,username,password,confirmPassword,gender})=>{
