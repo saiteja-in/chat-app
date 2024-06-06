@@ -17,8 +17,8 @@ export const signUpUser = async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, salt);
 
     // we will keep the profile photo from api  https://avatar.iran.liara.run/public/boy?username=teja
-    const boyProfilePic = `https://avatar.iran.liara.run/public/boy?username=${username}`;
-    const girlProfilePic = `https://avatar.iran.liara.run/public/girl?username=${username}`;
+    const boyProfilePic = `https://robohash.org/${username}.png?set=set2`;
+    const girlProfilePic = `https://robohash.org/${username}.png?set=set4`;
 
     const newUser = new User({
       fullName, //can also be written as fullName:fullName
