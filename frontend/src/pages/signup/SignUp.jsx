@@ -100,8 +100,9 @@ const handleCheckboxChange=(gender)=>{
           </Link>
 
           <div>
-            <button className="btn glass btn-outline btn-block btn-sm mt-2">
-              SignUp
+            <button className="btn glass btn-outline btn-block btn-sm mt-2" disabled={loading}>
+              
+              {loading ?<span className="loading loading-spinner loading-md"></span> : "SignUp"}
             </button>
           </div>
         </form>
