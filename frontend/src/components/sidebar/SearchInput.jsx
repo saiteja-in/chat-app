@@ -16,8 +16,8 @@ const SearchInput = () => {
 			return toast.error("Search term must be at least 3 characters long");
 		}
 
+		// console.log(conversation)
 		const conversation = conversations.find((c) => c.fullName.toLowerCase().includes(search.toLowerCase()));
-
 		if (conversation) {
 			setSelectedConversation(conversation);
 			setSearch("");
