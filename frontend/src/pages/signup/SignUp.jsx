@@ -37,7 +37,7 @@ const handleCheckboxChange=(gender)=>{
             </label>
             <input
               type="text"
-              placeholder="Sai Teja"
+              placeholder="Enter full name"
               className="w-full input input-secondary input-bordered  h-10"
               value={inputs.fullName}
               onChange={(e) =>
@@ -52,7 +52,7 @@ const handleCheckboxChange=(gender)=>{
             </label>
             <input
               type="text"
-              placeholder="saiteja"
+              placeholder="Enter username"
               className="w-full input-secondary input input-bordered h-10"
               value={inputs.username}
               onChange={(e) =>
