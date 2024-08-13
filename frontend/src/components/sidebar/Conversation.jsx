@@ -10,7 +10,7 @@ const Conversation = ({conversation,lastIdx}) => {
 	const isOnline=onlineUsers.includes(conversation._id)
 	return (
 		<>
-			<div className={`flex gap-2 items-center text-gray-500 hover:bg-pink-500 transform hover:scale-105 transition duration-300 ${isSelected?"bg-pink-500":""} rounded p-2 py-1 cursor-pointer`}
+			<div className={`flex gap-2 items-center text-gray-500 hover:bg-pink-500  ${isSelected?"bg-pink-500":""} rounded p-2 py-1 cursor-pointer`}
 			onClick={()=>setSelectedConversation(conversation)}>
 				<div className={`avatar ${isOnline ? "online": ""}`}>
 					<div className='w-12 rounded-full'>
