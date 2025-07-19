@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "chat-app": "file:..",
+    "emoji-picker-react": "^4.13.2",
     "framer-motion": "^11.11.9",
+    "frimousse": "^0.3.0",
     "lucide-react": "^0.453.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
